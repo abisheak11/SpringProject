@@ -7,11 +7,9 @@ import org.springframework.stereotype.Service;
 @Log4j2
 public class Payment {
 
-    public Payment(){
-        log.info("annotation based");
-    }
 
     public void getPayment(){
-        log.error("this is a payment method");
+
+        log.error("service annotation");
     }
 }
