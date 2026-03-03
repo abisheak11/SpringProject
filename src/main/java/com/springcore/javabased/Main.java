@@ -1,0 +1,17 @@
+package com.springcore.javabased;
+
+import lombok.extern.log4j.Log4j2;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.util.Date;
+
+@Log4j2
+public class Main {
+    public static void main(String[] args) {
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext("com.springcore.javabased");
+        Date date1=applicationContext.getBean("date", Date.class);
+        log.info(date1);
+
+    }
+}
