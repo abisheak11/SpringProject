@@ -6,11 +6,11 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args) {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext("com.springcore");
-        Payment payment = applicationContext.getBean("payment", Payment.class);
+        Payment1 payment = applicationContext.getBean("payment1", Payment1.class);
         payment.getPayment();
-        Component component = applicationContext.getBean("component", Component.class);
+        Component1 component = applicationContext.getBean("component1", Component1.class);
         component.getComponent();
-        Repository repository = applicationContext.getBean("repository", Repository.class);
+        Repository1 repository = applicationContext.getBean("repository1", Repository1.class);
         repository.getRepository();
     }
 }
